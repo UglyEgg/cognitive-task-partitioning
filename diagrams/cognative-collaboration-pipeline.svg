@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-label="Cognitive collaboration pipeline">
+    <defs>
+        <style>
+            .bg { fill:#0b0f14; }
+            .box { fill:#111827; stroke:#334155; stroke-width:1.6; rx:18; }
+            .h1 { fill:#e5e7eb; font:700 20px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .t  { fill:#e5e7eb; font:700 15px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .p  { fill:#9ca3af; font:13px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .lane { fill:none; stroke:rgba(148,163,184,0.22); stroke-width:1.2; rx:22; }
+            .lanet { fill:#9ca3af; font:600 12px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; letter-spacing:0.2px; }
+            .arrow { stroke:#334155; stroke-width:2.2; fill:none; marker-end:url(#arrow); }
+        </style>
+        <marker id="arrow" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 Z" fill="#334155"/>
+        </marker>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="960" height="520"/>
+
+    <text class="h1" x="40" y="52">Cognitive Collaboration Pipeline</text>
+    <text class="p" x="40" y="76">Exploration is creative; verification is mechanical.</text>
+
+    <rect class="lane" x="40" y="110" width="880" height="140" rx="22"/>
+    <text class="lanet" x="56" y="132">CREATIVE STAGE (Human + LLM)</text>
+
+    <rect class="lane" x="40" y="270" width="880" height="190" rx="22"/>
+    <text class="lanet" x="56" y="292">MECHANICAL STAGE (Deterministic tooling)</text>
+
+    <rect class="box" x="80"  y="150" width="220" height="76"/>
+    <rect class="box" x="350" y="150" width="250" height="76"/>
+    <rect class="box" x="650" y="150" width="230" height="76"/>
+
+    <text class="t" x="110" y="178">Human Intent</text>
+    <text class="p" x="110" y="201">goals • constraints</text>
+
+    <text class="t" x="372" y="178">Design Exploration</text>
+    <text class="p" x="372" y="201">human + LLM ideation</text>
+
+    <text class="t" x="675" y="178">Structured Artifact</text>
+    <text class="p" x="675" y="201">code / rules / specs</text>
+
+    <path class="arrow" d="M300 188 C320 188, 330 188, 350 188"/>
+    <path class="arrow" d="M600 188 C620 188, 630 188, 650 188"/>
+
+    <rect class="box" x="120" y="330" width="220" height="82"/>
+    <rect class="box" x="380" y="330" width="220" height="82"/>
+    <rect class="box" x="640" y="330" width="220" height="82"/>
+
+    <text class="t" x="145" y="360">Validation</text>
+    <text class="p" x="145" y="384">schema • constraints</text>
+
+    <text class="t" x="405" y="360">Search / Simulation</text>
+    <text class="p" x="405" y="384">model-check • Monte Carlo</text>
+
+    <text class="t" x="665" y="360">Evidence &amp; Traces</text>
+    <text class="p" x="665" y="384">reports • repro steps</text>
+
+    <path class="arrow" d="M340 371 C360 371, 370 371, 380 371"/>
+    <path class="arrow" d="M600 371 C620 371, 630 371, 640 371"/>
+
+    <rect class="box" x="370" y="430" width="220" height="60"/>
+    <text class="t" x="410" y="464">Human Review → Release</text>
+
+    <path class="arrow" d="M750 412 C750 430, 650 430, 590 450"/>
+</svg>

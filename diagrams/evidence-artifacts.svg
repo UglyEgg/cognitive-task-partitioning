@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-label="Evidence artifacts pipeline: artifacts to tooling to evidence">
+    <defs>
+        <style>
+            .bg { fill:#0b0f14; }
+            .h1 { fill:#e5e7eb; font:700 20px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .p  { fill:#9ca3af; font:13px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .coltitle { fill:#9ca3af; font:700 12px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; letter-spacing:0.28px; }
+
+            .panel { fill:#0f172a; stroke:#334155; stroke-width:1.6; rx:18; }
+            .card { fill:#111827; stroke:#334155; stroke-width:1.4; rx:16; }
+            .chip { fill:rgba(34,197,94,0.14); stroke:rgba(34,197,94,0.35); stroke-width:1; rx:999; }
+            .chip2 { fill:rgba(245,158,11,0.14); stroke:rgba(245,158,11,0.35); stroke-width:1; rx:999; }
+            .chip3 { fill:rgba(59,130,246,0.16); stroke:rgba(59,130,246,0.35); stroke-width:1; rx:999; }
+
+            .ct { fill:#e5e7eb; font:700 14px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .li { fill:#9ca3af; font:12px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .chipT { fill:#e5e7eb; font:700 11px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+
+            .arrow { stroke:#334155; stroke-width:2.2; fill:none; marker-end:url(#arrow); }
+        </style>
+
+        <marker id="arrow" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 Z" fill="#334155"/>
+        </marker>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="960" height="420"/>
+
+    <text class="h1" x="40" y="52">Evidence Artifacts</text>
+    <text class="p" x="40" y="76">Deterministic tooling should emit reviewable evidence, not just “pass/fail”.</text>
+
+    <rect class="panel" x="40" y="100" width="880" height="280" rx="18"/>
+
+    <!-- Column titles -->
+    <text class="coltitle" x="86"  y="136">INPUT ARTIFACTS</text>
+    <text class="coltitle" x="408" y="136">DETERMINISTIC TOOLING</text>
+    <text class="coltitle" x="716" y="136">EVIDENCE OUTPUTS</text>
+
+    <!-- Cards -->
+    <rect class="card" x="70"  y="150" width="260" height="200" rx="16"/>
+    <rect class="card" x="350" y="150" width="260" height="200" rx="16"/>
+    <rect class="card" x="630" y="150" width="260" height="200" rx="16"/>
+
+    <!-- Left card content -->
+    <text class="ct" x="92" y="182">Structured artifacts</text>
+    <rect class="chip3" x="92" y="194" width="110" height="22" rx="999"/>
+    <text class="chipT" x="116" y="210">spec</text>
+    <text class="li" x="92" y="238">• architecture.md</text>
+    <text class="li" x="92" y="262">• schemas / contracts</text>
+    <rect class="chip3" x="92" y="276" width="110" height="22" rx="999"/>
+    <text class="chipT" x="116" y="292">impl</text>
+    <text class="li" x="92" y="316">• code / rules / config</text>
+
+    <!-- Middle card content -->
+    <text class="ct" x="372" y="182">Verification pipeline</text>
+    <rect class="chip2" x="372" y="194" width="120" height="22" rx="999"/>
+    <text class="chipT" x="395" y="210">validate</text>
+    <text class="li" x="372" y="238">• schemas • integrity</text>
+    <rect class="chip2" x="372" y="252" width="120" height="22" rx="999"/>
+    <text class="chipT" x="404" y="268">analyze</text>
+    <text class="li" x="372" y="296">• graphs • invariants</text>
+    <rect class="chip2" x="372" y="310" width="120" height="22" rx="999"/>
+    <text class="chipT" x="405" y="326">test/sim</text>
+    <text class="li" x="372" y="350">• traces • metrics</text>
+
+    <!-- Right card content -->
+    <text class="ct" x="652" y="182">Evidence artifacts</text>
+    <rect class="chip" x="652" y="194" width="140" height="22" rx="999"/>
+    <text class="chipT" x="676" y="210">reports</text>
+    <text class="li" x="652" y="238">• validate_report.md</text>
+    <text class="li" x="652" y="262">• analysis_report.md</text>
+    <rect class="chip" x="652" y="276" width="140" height="22" rx="999"/>
+    <text class="chipT" x="681" y="292">data</text>
+    <text class="li" x="652" y="316">• metrics.json</text>
+    <text class="li" x="652" y="340">• traces/ (repro)</text>
+
+    <!-- Arrows between columns -->
+    <path class="arrow" d="M330 250 C340 250, 342 250, 350 250"/>
+    <path class="arrow" d="M610 250 C620 250, 622 250, 630 250"/>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-label="Collaboration model: Human, LLM, Deterministic Systems">
+    <defs>
+        <style>
+            .bg { fill:#0b0f14; }
+            .card { fill:#111827; stroke:#334155; stroke-width:1.5; rx:18; }
+            .h1 { fill:#e5e7eb; font:700 20px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .h2 { fill:#e5e7eb; font:700 16px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .p  { fill:#9ca3af; font:14px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .small { fill:#9ca3af; font:12px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .tag { fill:rgba(34,197,94,0.14); stroke:rgba(34,197,94,0.35); stroke-width:1; rx:10; }
+            .tagtxt { fill:#b7f7c6; font:600 12px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; letter-spacing:0.2px; }
+            .arrow { stroke:#334155; stroke-width:2.2; fill:none; marker-end:url(#arrow); }
+        </style>
+        <marker id="arrow" viewBox="0 0 10 10" refX="7.5" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 Z" fill="#334155"/>
+        </marker>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="960" height="360"/>
+
+    <text class="h1" x="40" y="52">Collaboration Model</text>
+    <text class="p" x="40" y="76">Assign work to the agent structurally suited to do it.</text>
+
+    <rect class="card" x="40"  y="110" width="280" height="200"/>
+    <rect class="card" x="340" y="110" width="280" height="200"/>
+    <rect class="card" x="640" y="110" width="280" height="200"/>
+
+    <text class="h2" x="64" y="146">Human</text>
+    <rect class="tag" x="64" y="158" width="150" height="22"/>
+    <text class="tagtxt" x="75" y="174">Intent &amp; Judgment</text>
+    <text class="p" x="64" y="206">• constraints &amp; tradeoffs</text>
+    <text class="p" x="64" y="232">• meaning, taste, priority</text>
+    <text class="p" x="64" y="258">• acceptance criteria</text>
+    <text class="small" x="64" y="292">Weakness: combinatorics</text>
+
+    <text class="h2" x="364" y="146">LLM</text>
+    <rect class="tag" x="364" y="158" width="186" height="22"/>
+    <text class="tagtxt" x="375" y="174">Exploration &amp; Synthesis</text>
+    <text class="p" x="364" y="206">• idea expansion</text>
+    <text class="p" x="364" y="232">• reframing &amp; alternatives</text>
+    <text class="p" x="364" y="258">• draft structured artifacts</text>
+    <text class="small" x="364" y="292">Weakness: exhaustive proof</text>
+
+    <text class="h2" x="664" y="146">Deterministic Systems</text>
+    <rect class="tag" x="664" y="158" width="206" height="22"/>
+    <text class="tagtxt" x="675" y="174">Verify &amp; Measure</text>
+    <text class="p" x="664" y="206">• validation &amp; linting</text>
+    <text class="p" x="664" y="232">• search / model checking</text>
+    <text class="p" x="664" y="258">• simulation &amp; telemetry</text>
+    <text class="small" x="664" y="292">Weakness: creativity</text>
+
+    <path class="arrow" d="M320 210 C330 210, 330 210, 340 210"/>
+    <path class="arrow" d="M620 210 C630 210, 630 210, 640 210"/>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-label="Cognitive load ladder table">
+    <defs>
+        <style>
+            .bg { fill:#0b0f14; }
+            .panel { fill:#0f172a; stroke:#334155; stroke-width:1.6; rx:18; }
+            .row { fill:#111827; stroke:rgba(51,65,85,0.9); stroke-width:1; rx:14; }
+            .h1 { fill:#e5e7eb; font:700 20px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .th { fill:#9ca3af; font:700 12px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; letter-spacing:0.28px; }
+            .lvl { fill:#e5e7eb; font:800 12px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; letter-spacing:0.4px; }
+            .cell { fill:#e5e7eb; font:600 13px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .note { fill:#9ca3af; font:12px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+            .pillH { fill:rgba(59,130,246,0.16); stroke:rgba(59,130,246,0.35); stroke-width:1; }
+            .pillL { fill:rgba(34,197,94,0.14); stroke:rgba(34,197,94,0.35); stroke-width:1; }
+            .pillD { fill:rgba(245,158,11,0.14); stroke:rgba(245,158,11,0.35); stroke-width:1; }
+            .pillT { fill:#e5e7eb; font:700 11px ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial; }
+        </style>
+    </defs>
+
+    <rect class="bg" x="0" y="0" width="960" height="520"/>
+
+    <text class="h1" x="40" y="52">Cognitive Load Ladder</text>
+    <text class="note" x="40" y="76">Which agent should own which reasoning workload.</text>
+
+    <rect class="panel" x="40" y="100" width="880" height="380"/>
+
+    <text class="th" x="78"  y="140">LEVEL</text>
+    <text class="th" x="190" y="140">WORK TYPE</text>
+    <text class="th" x="520" y="140">PRIMARY OWNER</text>
+    <text class="th" x="720" y="140">NOTES</text>
+
+    <!-- Row 1 -->
+    <rect class="row" x="64" y="160" width="832" height="54"/>
+    <text class="lvl" x="82" y="192">L1</text>
+    <text class="cell" x="190" y="192">Meaning, intent, constraints</text>
+    <rect class="pillH" x="520" y="176" width="120" height="26" rx="999"/>
+    <text class="pillT" x="548" y="194">Human</text>
+    <text class="note" x="720" y="192">Non-computable judgment</text>
+
+    <!-- Row 2 -->
+    <rect class="row" x="64" y="222" width="832" height="54"/>
+    <text class="lvl" x="82" y="254">L2</text>
+    <text class="cell" x="190" y="254">Ideation, reframing, alternatives</text>
+    <rect class="pillL" x="520" y="238" width="170" height="26" rx="999"/>
+    <text class="pillT" x="548" y="256">Human + LLM</text>
+    <text class="note" x="720" y="254">Divergent exploration</text>
+
+    <!-- Row 3 -->
+    <rect class="row" x="64" y="284" width="832" height="54"/>
+    <text class="lvl" x="82" y="316">L3</text>
+    <text class="cell" x="190" y="316">Structural design, interfaces, contracts</text>
+    <rect class="pillL" x="520" y="300" width="170" height="26" rx="999"/>
+    <text class="pillT" x="548" y="318">Human + LLM</text>
+    <text class="note" x="720" y="316">LLM drafts, human signs</text>
+
+    <!-- Row 4 -->
+    <rect class="row" x="64" y="346" width="832" height="54"/>
+    <text class="lvl" x="82" y="378">L4</text>
+    <text class="cell" x="190" y="378">Exhaustive reasoning, search, model-check</text>
+    <rect class="pillD" x="520" y="362" width="200" height="26" rx="999"/>
+    <text class="pillT" x="548" y="380">Deterministic</text>
+    <text class="note" x="720" y="378">Don’t spend tokens here</text>
+
+    <!-- Row 5 -->
+    <rect class="row" x="64" y="408" width="832" height="54"/>
+    <text class="lvl" x="82" y="440">L5</text>
+    <text class="cell" x="190" y="440">Statistics, telemetry, Monte Carlo</text>
+    <rect class="pillD" x="520" y="424" width="200" height="26" rx="999"/>
+    <text class="pillT" x="548" y="442">Deterministic</text>
+    <text class="note" x="720" y="440">Evidence for review</text>
+</svg>
